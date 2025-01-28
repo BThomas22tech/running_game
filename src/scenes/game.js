@@ -55,7 +55,7 @@ const scoreText = k.add([
         }
         k.play("hurt", {volume:0.5})
         k.setData("current-score", score)
-        k.go("gameover", {citySfx})
+        k.go("gameover", citySfx)
     })
     sonic.onCollide("ring", (ring)=>{
         k.play("ring", {volume: 0.5})
